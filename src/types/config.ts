@@ -17,8 +17,12 @@ interface SiteConfig {
   timezone?: string;
   /** Text direction */
   dir?: "ltr" | "rtl" | "auto";
+  /** Shorter title used in the header when desired */
+  shortTitle?: string;
   /** Google Search Console verification meta tag value */
   googleVerification?: string;
+  /** Google Analytics measurement ID */
+  googleTagId?: string;
 }
 
 interface PostsConfig {
@@ -115,7 +119,7 @@ type ResolvedSiteConfig = Required<
     | "ogImage"
   >
 > &
-  Pick<SiteConfig, "profile" | "googleVerification">;
+  Pick<SiteConfig, "profile" | "shortTitle" | "googleVerification" | "googleTagId">;
 
 export interface ResolvedAstroPaperConfig {
   site: ResolvedSiteConfig;

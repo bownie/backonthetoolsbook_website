@@ -4,6 +4,7 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://backonthetoolsbook.com/",
     title: "Back on the Tools",
+    shortTitle: "Back on the Tools",
     description: "Finding the tech work that actually suits you by Richard W. Bown. Coming Spring 2027.",
     author: "Richard Bown",
     profile: "https://richardwbown.com",
