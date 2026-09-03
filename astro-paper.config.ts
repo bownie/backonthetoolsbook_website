@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
     description: "Doing the tech work that actually suits you. Coming Spring 2027.",
     author: "Richard Bown",
     profile: "https://richardwbown.com",
-    ogImage: "default-og.jpg",
+    ogImage: "back-on-the-tools-2026-sep-smaller.jpg",
     lang: "en",
     timezone: "Europe/Amsterdam",
     dir: "ltr",
