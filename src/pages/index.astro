@@ -3,6 +3,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import NewsletterSignup from "@/components/NewsletterSignup.astro";
 import config from "@/config";
 
 const locale = Astro.currentLocale ?? config.site.lang;
@@ -24,20 +25,35 @@ const homePath = getRelativeLocaleUrl(locale, "");
       <div class="mx-auto max-w-prose space-y-6 text-base leading-8 text-muted-foreground">
 
         <img
-          src="back-on-the-tools-speckle-small.jpg"
+          src="back-on-the-tools-2026-sep-smaller.jpg"
           alt="Back on the Tools cover artwork"
           class="mx-auto block w-5/12 max-w-sm rounded-3xl bg-transparent shadow-lg sm:w-1/3"
         />
 
         <p class="text-lg font-normal text-foreground">
-          Rediscovering the joy of tech work that actually suits you.
+        Rediscovering the joy of tech work that actually suits you.
         </p>
 
         <p>
-          Head to
-          <a href="https://richardwbown.com" target="_blank">richardwbown.com</a>
-          for more writing and to sign up to the newsletter.
+          It used to be easy. Turn up, do a job of work, get paid. Maybe there was some on-call, but you got paid for that, or time in lieu. More than that, you didn't really care because you were 25 and you loved working in tech.
         </p>
+        <p>
+          But somewhere along the way you grew ambitious, you led, you managed, and that ambition turned on you. Now you don't know which way is up. You feel the younger engineers have all the cards. They are smarter, cheaper, harder working.
+        </p>
+        <p>
+          So what's your next move?
+        </p>
+        <p>
+          Here's what I did....
+        </p>
+
+        <section id="newsletter" class="mt-12 sm:mt-16">
+          <div class="mx-auto max-w-prose space-y-6 text-base leading-8 text-muted-foreground text-justify">
+            <h2 class="text-2xl sm:text-2xl font-semibold">Want to stay up to date?</h2>
+            <p class="text-lg sm:text-xs font-normal">You can join my newsletter for writing updates, publication news and opportunities to become an early ARC reader.</p>
+            <NewsletterSignup title="Sign up for updates" description="Get book news, writing updates, and launch information straight to your inbox." />
+          </div>
+        </section>
       </div>
     </section>
 

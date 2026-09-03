@@ -5,7 +5,7 @@ export default defineAstroPaperConfig({
     url: "https://backonthetoolsbook.com/",
     title: "Back on the Tools",
     shortTitle: "Back on the Tools",
-    description: "Finding the tech work that actually suits you by Richard W. Bown. Coming Spring 2027.",
+    description: "Doing the tech work that actually suits you. Coming Spring 2027.",
     author: "Richard Bown",
     profile: "https://richardwbown.com",
     ogImage: "default-og.jpg",
@@ -32,7 +32,6 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "bluesky",   url: "https://bsky.app/profile/bownie.bsky.social" },
     { name: "linkedin",  url: "https://www.linkedin.com/in/richard-bown/" },
-    { name: "instagram", url: "https://www.instagram.com/richard_w_bown_writer/" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
